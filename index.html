@@ -5,41 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/icon_style.css">
-    <script src="./js/liga.js"></script>
+    <link rel="stylesheet" href="/css/hamburger_style.css">
+
     <title>Mocek PC</title>
 </head>
 <body>
     <header>
-        <nav class="navigace">
-            <li><a href="/">Home</a></li>
-            <li><a href="./sites/o-nas.html">O nás</a></li>
-            <li><a href="./sites/kontakt.html">Kontakt</a></li>
+
+        </nav>
+        <nav class="navbar">
+            <menu class="menu-toggle is-active">
+                <li><a href="/"><span class="icon-home"></span></a></li>
+                <li><a href="./sites/o-nas.html">O nás</a></li>
+                <li><a href="./sites/kontakt.html">Kontakt</a></li>
+            </menu>
+            <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="main">
-            <picture class="center">
-                <img  class="logo--main"   src="./images/logo.jfif" alt="Logo firmy Mocek PC.">
-            </picture>
+
+        <div class="div--h">
             <h1>Mocek PC - oprava počítačů</h1>
-            <div class="div--text">
-                <p class="modra">V Mocek PC servisu, každý problém je příležitostí k učení a inovaci. S každým opraveným počítačem nejenže obnovujeme technologii, ale také posilujeme důvěru našich zákazníků. Naše práce není jen o opravách; je to o poskytování řešení, která přinášejí radost a uspokojení. Připojte se k nám na cestě k technologické dokonalosti, kde každé RGB světlo nejenže znamená výkon, ale také naši vášeň pro výjimečnost.</p>
-            </div>
-            <span class="icon-home3"></span>
+        </div>
+        <picture class="center">
+            <img  class="logo--main"   src="./images/logo.jfif" alt="Logo firmy Mocek PC.">
+        </picture>
+        
+        <div class="div--text">
+            <p class="modra">V Mocek PC servisu, každý problém je příležitostí k učení a inovaci. S každým opraveným počítačem nejenže obnovujeme technologii, ale také posilujeme důvěru našich zákazníků. Naše práce není jen o opravách; je to o poskytování řešení, která přinášejí radost a uspokojení. Připojte se k nám na cestě k technologické dokonalosti, kde každé RGB světlo nejenže znamená výkon, ale také naši vášeň pro výjimečnost.</p>
         </div>
 
     </main>
+
     
     <footer>
         <div >
             <h3>Kontakt</h3>
-            <p>info@mocek.pc</p>
-            <p>+420 605 749 856</p>
+            <div>
+                <span class="icon-envelop icona"></span>
+                <p>info@mocek.pc</p>
+            </div>
+            <div>
+                <span class="icon-phone icona"></span>
+                <p>+420 605 749 856</p>
+            </div>
+
             <h3>Adresa sídla</h3>
-            <p>Cyrila a Metoděje 525/16,
-                460 01 Liberec-Růžodol I</p>
+            <div>
+                <span class="icon-location icona" id="marker"></span>
+                <p>Cyrila a Metoděje 525/16,
+                    460 01 Liberec-Růžodol I</p>
+            </div>
+        </div>
+        <div class="footer--logo">
+            <picture>
+                <img src="./images/logo.jfif" alt="Logo firmy Mocek PC.">
+            </picture>
         </div>
 
     </footer>
+    <script src="/script/script.js"></script>
 </body>
 </html>

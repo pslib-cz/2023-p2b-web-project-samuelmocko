@@ -1,0 +1,74 @@
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .checkbox {
+        display: none;
+    }
+    .hamburger {
+        --line: 8px;
+        width: 40px;
+        aspect-ratio: 1/1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--line);
+        margin: .3em;
+    }
+    .hamburger span {
+        height: var(--line);
+        width: 100%;
+        background: #000;
+        border-radius: calc(var(--line) / 2);
+        transform-origin: right center;
+        transition: transform .3s, opacity 0.2s .9s, 
+                    translate .4s .4s;
+    }
+ 
+    .hamburger.is-active span:nth-of-type(1) {
+        transform: translateY(200%)
+                   rotate(45deg);
+        translate: 160px;
+    }
+
+    .hamburger.is-active span:nth-of-type(2) {
+       transition: opacity 0.2s;
+       opacity: 1;
+    }
+
+    .hamburger.is-active span:nth-of-type(3) {
+        transform: translateY(calc(var(--line) * -2))
+                   rotate(-45deg);
+        translate: 160px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+    menu {
+        background-color: var(--lighterblue);
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        overflow: hidden;
+        transition: left 2.5s;
+    }
+    menu.is-active {
+        left: 100%;
+    }
+}
+

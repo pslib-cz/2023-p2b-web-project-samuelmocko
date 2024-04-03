@@ -4,9 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>O nás</title>
+    <link rel="stylesheet" href="../css/icon_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="/css/hamburger_style.css">
+    <title>O nás | Mocek PC</title>
 </head>
 <body>
+    <header>
+
+    </nav>
+    <nav class="navbar">
+        <menu class="menu-toggle is-active">
+            <li><a href="/"><span class="icon-home"></span></a></li>
+            <li class="active"><a href="../sites/o-nas.html">O nás</a></li>
+            <li><a href="../sites/kontakt.html">Kontakt</a></li>
+        </menu>
+        <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+    <main>
+        <div class="div--h">
+            <h2>O nás</h2>
+        </div>
+
+        <div class="div--text">
+            <p class="modra">Specializujeme se na servis a opravy počítačů a notebooků. S rychlostí a profesionalitou se staráme o všechny značky a typy notebooků a počítačů.</p>
+        </div>
+        <div>
+            <div class="div--h">
+                <h3>Na co se zaměřujeme</h3>
+            </div>
+            <div>
+                <div class="swiper div--flex">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <img class="slider--images" src="../images/installing_os.jfif" alt="">
+                            </picture>
+                            <div class="slider-view__description">
+                                <p class="div--p__white">Instalace operačního systému</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img class="slider--images" src="../images/repairing_hdd.jfif" alt="">
+                            </picture>
+                            <div class="slider-view__description">
+                                <p class="div--p__white">Záchrana dat</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img class="slider--images" src="../images/computer.jfif" alt="">
+                            </picture>
+                            <div class="slider-view__description">
+                                <p class="div--p__white">Profesionální oprava počítačů</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img class="slider--images" src="../images/cleaning.jfif" alt="">
+                            </picture>
+                            <div class="slider-view__description">
+                                <p class="div--p__white">Vyčištění počítačů</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img class="slider--images" src="../images/antivirus.jfif" alt="">
+                            </picture>
+                            <div class="slider-view__description">
+                                <p class="div--p__white">Odvirování počítačů</p>
+                            </div>
+                        </div>
+
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
     
+    <footer>
+        <div >
+            <h3>Kontakt</h3>
+            <div>
+                <span class="icon-envelop icona"></span>
+                <p>info@mocek.pc</p>
+            </div>
+            <div>
+                <span class="icon-phone icona"></span>
+                <p>+420 605 749 856</p>
+            </div>
+
+            <h3>Adresa sídla</h3>
+            <div>
+                <span class="icon-location icona" id="marker"></span>
+                <p>Cyrila a Metoděje 525/16,
+                    460 01 Liberec-Růžodol I</p>
+            </div>
+        </div>
+        <div class="footer--logo">
+            <picture >
+                <img src="../images/logo.jfif" alt="Logo firmy Mocek PC.">
+            </picture>
+        </div>
+
+    </footer>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      
+        const swiper = new Swiper(".swiper",{
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          
+        })
+    </script>
+    <script type="module">
+        import lightgallery from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm'
+        import lgThumbnail from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm'
+        import lgPager from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/pager/+esm'
+        import lgZoom from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm'
+        import lgAutoplay from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm'
+
+        lightgallery(document.querySelector('div'), 
+        {
+            selector: document.querySelectorAll('div picture img'),
+            plugins: [lgThumbnail, lgPager, lgZoom, lgAutoplay],
+            slideShowAutoplay: true,
+            slideShowInterval:2000,
+        });
+    </script>
+    <script src="/script/script.js"></script>
 </body>
 </html>
