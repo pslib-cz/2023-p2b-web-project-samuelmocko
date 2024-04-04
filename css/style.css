@@ -47,7 +47,7 @@ a{
     flex-direction: row;
     justify-content: end;
 }
-.logo--main{
+.logo__main{
     margin: 0 0 2em 0;
     width: 40vw;
     aspect-ratio: 1/1;
@@ -114,15 +114,24 @@ footer div picture img{
 .active{
     background-color: var(--darkblue);
 }
-.div--h{
+.div__h{
     justify-content: center;
     display: flex;
+}
+.div__text p {
+    background-color: var(--lightblue);
+    padding: .5em;
+    color: var(--darkblue);
+}
+.div__text {
+    display: flex;
+    justify-content: center;
 }
 .map{
     width: 60vw;
     aspect-ratio: 1/1;
 }
-.div--flex{
+.div__flex{
     display: flex;
     flex-direction: column;
     background-color: var(--lightblue);
@@ -131,7 +140,7 @@ footer div picture img{
 main div div div{
     padding: 1em;
 }
-.div--flex--row{
+.div__flex__row{
     display: flex;
     flex-direction: row;
 
@@ -140,7 +149,7 @@ input{
     color: grey;
     margin: .3em .3em .3em 0;
 }
-.div--form{
+.div__form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,11 +158,11 @@ input{
 label{
     margin: .3em;
 }
-.slider--images{
+.slider__images{
     width: 50vw;
     aspect-ratio: 1/1;
 }
-.div--p__white{
+.div__p--white{
     color: white;
     font-weight: 800;
 }
@@ -162,31 +171,29 @@ label{
     width: 6em;
     border-radius: 0.3em;
 }
-.footer--logo{
+.footer__logo{
     position: absolute;
     right: 0;
 }
-.div--flex{
-    margin-bottom: 10em;
-}
+
 
 @media only screen and (min-width: 768px){
     :root{
         font-size: large;
     }
-    .logo--main{
+    .logo__main{
         width: 20vw;
     
     }
     footer{
         /* width: 100vw; */
         display: flex;
-
+        margin-top: auto;
         /* margin-top: auto; */
     }
-    .modra{
+    /* .modra{
         margin-bottom: 15em;
-    }
+    } */
     footer div picture img{
         width: 10vw;
     }
@@ -194,10 +201,10 @@ label{
         width: 50vw;
         aspect-ratio: 1/.75;
     }
-    .div--flex{
+    .div__flex{
         margin-bottom: 10em;
     }
-    .slider--images{
+    .slider__images{
         width: 30vw;
         aspect-ratio: 1/1;
     }
