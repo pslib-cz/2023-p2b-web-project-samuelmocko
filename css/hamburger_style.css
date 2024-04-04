@@ -68,7 +68,7 @@ menu {
         transition: left 2.5s;
     }
     menu.is-active {
-        left: 100%;
+        left: -100%;
     }
 }
 
