@@ -42,10 +42,11 @@ a{
     text-decoration: none;
     font-weight: 1000;
 }
+
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
 }
 .logo__main{
     margin: 0 0 2em 0;
@@ -58,36 +59,38 @@ a{
     flex-direction: column;
     opacity: 0;
 }
+
 header{
     /* width: 100vw; */
     background-color: var(--lightblue);
     margin: 0;
     padding: 0;
+    position: sticky;
+    top: 0;
+
+
 }
 .center{
     display: flex;
     justify-content: center;
 }
-.div--text p{
+.div__text p{
      background-color: var(--lightblue);
      padding: .5em;
      color: var(--darkblue);
 
 }
-.div--text{
+.div__text{
     display: flex;
     justify-content: center;
     
 }
 footer{
-
     background-color: var(--lightblue);
     /* width: 100vw; */
     aspect-ratio: 1/.12;
     display: flex;
-    margin-top: 100%;
-
-    
+    margin-top: 3em;
 
 }
 footer div{
@@ -106,10 +109,12 @@ footer div div{
 #marker{
     color: rgb(223, 22, 22);
 }
-footer div picture img{
-    width: 20vw;
+
+header div picture img{
+    margin: .1em .1em 0em 0;
+    width: 36px;
     aspect-ratio: 1/1;
-    align-items: flex-end;
+    justify-content: flex-start;
 }
 .active{
     background-color: var(--darkblue);
@@ -171,7 +176,7 @@ label{
     width: 6em;
     border-radius: 0.3em;
 }
-.footer__logo{
+.header__logo{
     position: absolute;
     right: 0;
 }
@@ -188,22 +193,15 @@ label{
     footer{
         /* width: 100vw; */
         display: flex;
-        margin-top: auto;
+        
         /* margin-top: auto; */
     }
-    /* .modra{
-        margin-bottom: 15em;
-    } */
-    footer div picture img{
-        width: 10vw;
-    }
+
     .map{
         width: 50vw;
         aspect-ratio: 1/.75;
     }
-    .div__flex{
-        margin-bottom: 10em;
-    }
+
     .slider__images{
         width: 30vw;
         aspect-ratio: 1/1;
@@ -219,5 +217,8 @@ label{
     }
     .icona{
         font-size: xx-large;
+    }
+    header div picture img{
+        width: 2em;
     }
 }
