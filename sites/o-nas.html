@@ -51,47 +51,46 @@
                 </div>
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide"  data-src="../images/installing_os.jfif">
                             <picture>
-                                <source media="(max-width:780px )" srcset="../images/installing_os_480px.jpg">
-                                <img class="slider__images" src="../images/installing_os.jfif" alt="Ilustrační obrázek instalace operačního systému.">
+                                <source media="(min-width:780px )" srcset="../images/installing_os.jfif">
+                                <img class="slider__images" src="../images/installing_os_480px.jpg" alt="Ilustrační obrázek instalace operačního systému.">
                             </picture>
                             <div class="slider-view__description">
                                 <p class="div__p--white">Instalace operačního systému</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-src="../images/repairing_hdd.jfif">
                             <picture>
-                                <source media="(max-width:780px )" srcset="../images/repairing_hdd_.480pxjpg.jpg
-                                ">
-                                <img class="slider__images" src="../images/repairing_hdd.jfif" alt="Ilustrační obrázek opravy pevného disku.">
+                                <source media="(min-width:780px )" srcset="../images/repairing_hdd.jfif">
+                                <img class="slider__images" src="../images/repairing_hdd_.480pxjpg.jpg" alt="Ilustrační obrázek opravy pevného disku.">
                             </picture>
                             <div class="slider-view__description">
                                 <p class="div__p--white">Záchrana dat</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-src="../images/computer.jfif">
                             <picture>
-                                <source media="(max-width:780px )" srcset="../images/computer_480px.jpg">
-                                <img class="slider__images" src="../images/computer.jfif" alt="Ilustarční obrázek stolního počítače.">
+                                <source media="(min-width:780px )" srcset="../images/computer.jfif">
+                                <img class="slider__images" src="../images/computer_480px.jpg" alt="Ilustarční obrázek stolního počítače.">
                             </picture>
                             <div class="slider-view__description">
                                 <p class="div__p--white">Profesionální oprava počítačů</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-src="../images/cleaning.jfif">
                             <picture>
-                                <source media="(max-width:780px )" srcset="../images/cleaning_480px.jpg">
-                                <img class="slider__images" src="../images/cleaning.jfif" alt="Ilustační obrázek čištění počítače.">
+                                <source media="(min-width:780px )" srcset="../images/cleaning.jfif">
+                                <img class="slider__images" src="../images/cleaning_480px.jpg" alt="Ilustační obrázek čištění počítače.">
                             </picture>
                             <div class="slider-view__description">
                                 <p class="div__p--white">Vyčištění počítačů</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-src="../images/antivirus.jfif">
                             <picture>
-                                <source media="(max-width:780px )" srcset="../images/antivirus_480px.jpg">
-                                <img class="slider__images" src="../images/antivirus.jfif" alt="Ilustarční obrázek na téma odstraňování viru.">
+                                <source media="(min-width:780px )" srcset="../images/antivirus.jfif">
+                                <img class="slider__images" src="../images/antivirus_480px.jpg" alt="Ilustarční obrázek na téma odstraňování viru.">
                             </picture>
                             <div class="slider-view__description">
                                 <p class="div__p--white">Odvirování počítačů</p>
@@ -143,9 +142,9 @@
         import lgZoom from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm'
         import lgAutoplay from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm'
 
-        lightgallery(document.querySelector('div'), 
+        lightgallery(document.querySelector('.swiper'), 
         {
-            selector: document.querySelectorAll('div picture img'),
+            selector: document.querySelectorAll('.swiper-slide'),
             plugins: [lgThumbnail, lgPager, lgZoom, lgAutoplay],
             slideShowAutoplay: true,
             slideShowInterval:2000,
