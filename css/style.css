@@ -6,6 +6,7 @@
     --whiteblue: #CAF0F8;
     /* background-image: url(../images/background.jfif); */
     background-color: var(--whiteblue);
+    font-family: "Noto Znamenny Musical Notation", sans-serif;
 }
 
 h1{
@@ -29,7 +30,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../images/backgoround_img.jfif);
+    background-image: url(../images/background_image.jfif);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -80,11 +81,11 @@ header{
     justify-content: center;
 }
 .div__text p{
-     background-color: var(--lightblue);
-     padding: .5em;
-     color: var(--darkblue);
-     margin-bottom: 3em;
-
+    background-color: var(--lightblue);
+    padding: .5em;
+    color: var(--darkblue);
+    margin-bottom: 3em;
+    opacity: 95%;
 }
 .div__text{
     display: flex;
@@ -114,7 +115,7 @@ footer div div{
 .icona{
     padding-right: .3em;
 }
-#marker{
+.marker{
     color: rgb(223, 22, 22);
 }
 
@@ -150,6 +151,7 @@ header div picture img{
     background-color: var(--lightblue);
     padding: .5em;
     margin-bottom: 5em;
+    opacity: 95%;
 }
 main div div div{
     padding: 1em;
