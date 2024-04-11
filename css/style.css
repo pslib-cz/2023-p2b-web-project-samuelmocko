@@ -145,6 +145,7 @@ header div picture img{
     width: 60vw;
     aspect-ratio: 1/1;
 }
+
 .div__flex{
     display: flex;
     flex-direction: column;
