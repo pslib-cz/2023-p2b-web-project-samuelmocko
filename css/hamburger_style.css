@@ -66,6 +66,7 @@ menu {
         gap: 1em;
         overflow: hidden;
         transition: left .5s;
+
     }
     menu.is-active {
         left: -100%;
